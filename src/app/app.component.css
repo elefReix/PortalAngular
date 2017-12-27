@@ -1,0 +1,134 @@
+body{
+  background-attachment:fixed;
+  background-color:rgb(242, 242, 242);
+  background-image: linear-gradient(rgb(223, 242, 243) 0px, rgb(220, 236, 240) 50%, rgb(221, 228, 235) 100%);
+  padding: 30px;
+  box-sizing: border-box;
+/*   background-color:#ECF0F3; */
+}
+
+p{
+  margin: 0;
+}
+.button{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .boton:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
+
+.fiori-like-card.tile-2x{
+  width: 340px;
+}
+
+.fiori-like-card{
+  background: #fff;
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;/*Arial, Helvetica, sans-serif*/
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.fiori-like-card:hover{
+  box-shadow: 2px 2px 5px #565656;
+  transition: box-shadow 0.3s ease-in-out;
+  transform: scale(1.02);
+}
+
+.fiori-like-card-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.fiori-like-card .title{
+    font-size: 1rem;
+    max-height: 2.4rem;
+    padding-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.fiori-like-card .sub-title{
+   font-size: 0.875rem;
+  color: #878787;
+}
+
+.margin-none{
+  margin:0;
+}
+
+.fiori-like-card .fiori-like-card-footer{
+/*   position: relative;
+  top: 80px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fiori-like-card .n-info{
+  display: flex;
+  flex-direction: column;
+/*   justify-content:flex-end; */
+  align-items: flex-end;
+}
+
+.fiori-like-card .n-info .fiori-like-card-number{
+  font-size: 2rem;
+  color:#838E92;
+}
+
+.fiori-like-card .n-info .meta{
+  color: #878787;
+  font-size: 0.875rem;
+}
+
+.danger{
+  color: red !important;
+}
+
+
+
+/* estilo para el menu */
+#menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+}
+menu ul li {
+    background-color: #666;
+}
+
+menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 10px 10px 20px;
+}
+
+menu ul li a:hover {
+    background: #000;
+    border-left: 10px solid #333;
+    color: #fff;
+}
+border-left: 10px solid #666;
