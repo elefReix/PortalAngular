@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mangt-invoice.component.css']
 })
 export class MangtInvoiceComponent implements OnInit {
-  title = 'Gestion de facturas';
+  title = 'Gestión de facturas';
   constructor() { }
 
   ngOnInit() {

@@ -16,6 +16,31 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
 </head>
+<style>
+.percent-count {
+  width: 306px;
+  height: 21px;
+  margin:50px auto;
+  font-size:50px;
+  text-align:center;
+  color :black;
+}
+
+.progress-bar {
+  width: 506px;
+  height: 2px;
+  background-color:#bbb;
+  border-radius:13px;
+  padding:3px;
+  margin:50px auto;
+}
+.progress {
+  width: 500px;
+  height: 1.5px;
+  background-color:darkturquoise;
+  border-radius:10px;
+}
+</style>
 <body>
   <div class="row">
   <div class="col-md-12">
@@ -37,8 +62,34 @@
     <div class="row">
          <div class="col-md-1"></div>
          <div class="col-md-11">
-           <app-root></app-root>
+           <app-root>
+             <div id="percentCount" class="percent-count">100%</div>
+                <div class="progress-bar">
+                  <div class="progress" id="progress"></div>
+                </div>
+           </app-root>
          </div>
+
+         <script type="text/javascript" >
+         function progress() {
+           var prg = document.getElementById('progress');
+           var percent = document.getElementById('percentCount');
+           var counter = 5;
+           var progress = 25;
+           var id = setInterval(frame,5);
+           function frame() {
+             if (progress == 500 && counter == 100 ) {
+               clearInterval(id);
+             } else {
+               counter+=1;
+               progress+=5;
+               prg.style.width = progress + 'px';
+               percent.innerHTML = counter + '%';
+             }
+           }
+         }
+         progress();
+         </script>
    </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 </body>
