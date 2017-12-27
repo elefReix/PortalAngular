@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upload-invoice.component.css']
 })
 export class UploadInvoiceComponent implements OnInit {
-
+  title = 'Carga de facturas';
   constructor() { }
 
   ngOnInit() {
