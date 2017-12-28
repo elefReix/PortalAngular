@@ -1,4 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+
+*/
 *{
 margin : 0;
 padding : 0;
@@ -8,10 +10,12 @@ box-sizing : border-box;
 }
 
 a{
+font-size: 16px; /*281217*/
 text-decoration : none;
 color:#fff;
 }
 h1{
+font-size: 30px; /*281217*/
 font-family : 'Raleway', sans-serif;
 color : #fff;
 }
@@ -22,6 +26,69 @@ line-height : 18px;
 font-family : 'Raleway', sans-serif;
 }
 
+/*281217*/
+.btn {
+    margin : 0px;
+    padding : 0px;
+    font-weight: 200;
+    font-size: 16px;
+    color: #878787;
+    box-sizing : border-box;
+  }
+
+  .form-control {
+  margin : 0px;
+  padding : 0px;
+    width: 50px;
+    height: 30px;
+    background-color:#fff;
+    border-radius:2.5px;
+  }
+
+/*281217 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css"> quitar si no se usa este css*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .btn-menu{
   display : block;
   padding :20px;
@@ -110,3 +177,4 @@ body{
     margin : 0;
     position :fix;
 }
+*/

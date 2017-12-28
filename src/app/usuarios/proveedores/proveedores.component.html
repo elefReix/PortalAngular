@@ -1,0 +1,82 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div *ngIf="!nombre; else forminfo">
+  <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">
+    <div class="form-container">
+      <div class="row columns">
+
+          <h1>Datos  del proveedor</h1>
+
+
+        <label>RCF
+          <input type="text" formControlName="rfc">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['rfc'].valid && rForm.controls['rfc'].touched">{{ titleAlert }}</div>
+
+        <label>Nombre / Razón social
+          <input type="text" formControlName="nombre">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['nombre'].valid && rForm.controls['nombre'].touched">{{ titleAlert }}</div>
+
+        <label>Calle
+          <input type="text" formControlName="calle">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['calle'].valid && rForm.controls['calle'].touched">{{ titleAlert }}</div>
+
+        <label># Exterior
+          <input type="text" formControlName="noExterno">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['noExterno'].valid && rForm.controls['noExterno'].touched">{{ titleAlert }}</div>
+
+        <label># Interior
+          <input type="text" formControlName="noInterno">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['noInterno'].valid && rForm.controls['noInterno'].touched">{{ titleAlert }}</div>
+
+        <label>Colonia
+          <input type="text" formControlName="colonia">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['colonia'].valid && rForm.controls['colonia'].touched">{{ titleAlert }}</div>
+
+        <label>Estado
+          <input type="text" formControlName="estado">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['estado'].valid && rForm.controls['estado'].touched">{{ titleAlert }}</div>
+
+        <label>Banco
+          <input type="text" formControlName="banco">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['banco'].valid && rForm.controls['banco'].touched">{{ titleAlert }}</div>
+
+        <label>Numero de cuenta
+          <input type="text" formControlName="ctaBanco">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['ctaBanco'].valid && rForm.controls['ctaBanco'].touched">{{ titleAlert }}</div>
+
+        <label>Telefono
+          <input type="text" formControlName="telefono">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['telefono'].valid && rForm.controls['telefono'].touched">{{ titleAlert }}</div>
+
+        <input type="submit" class="button expanded" value="Confirmar" [disabled]="!rForm.valid">
+      </div>
+    </div>
+  </form>
+</div>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <div class="row columns">
+        <h1>Los datos correspondientes a : {{ nombre }} </h1>
+        <p>{{ rfc }}</p><br/>
+        <p>{{ noExterno }}</p><br/>
+        <p>{{ noInterno }}</p><br/>
+        <p>{{ colonia }}</p><br/>
+        <p>{{ estado }}</p><br/>
+        <p>{{ cp }}</p><br/>
+        <p>{{ mail }}</p><br/>
+        <p>{{ banco }}</p><br/>
+        <p>{{ telefono }}</p><br/>
+        <p>{{ ctaBanco }}</p>
+    </div>
+  </div>
+</ng-template>

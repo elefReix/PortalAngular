@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
 </head>
 <style>
 .percent-count {
@@ -49,8 +50,16 @@
             <div class="navbar-header">
               <a class="navbar-brand" href="#">Portal de Proveedores</a>
             </div>
-            <ul class="nav navbar-nav"></ul>
             <ul class="nav navbar-nav navbar-right">
+              <li>
+                <form class="navbar-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                  </div>
+                  <button type="submit" class="btn ">Buscar</button>
+                </form>
+              </li>
+              <li><a href="#"><span class="glyphicon glyphicon-bookmark"></span> Manual</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> User</a></li>
             </ul>
@@ -63,9 +72,9 @@
          <div class="col-md-1"></div>
          <div class="col-md-11">
            <app-root>
-             <div id="percentCount" class="percent-count">100%</div>
-                <div class="progress-bar">
-                  <div class="progress" id="progress"></div>
+               <div id="percentCount" class="percent-count">100%</div>
+                  <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
                 </div>
            </app-root>
          </div>

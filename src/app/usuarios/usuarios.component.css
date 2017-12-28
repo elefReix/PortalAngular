@@ -29,8 +29,8 @@
 
 .fiori-like-card .title{
     color: black;
-    font-size: 1.4rem;
-    max-height: 2.4rem;
+    font-size: 1rem;
+    max-height: 1.3rem;
     padding-bottom: 0;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -40,7 +40,7 @@
     -webkit-box-orient: vertical;
 }
 .fiori-like-card .sub-title{
-   font-size: 0.875rem;
+   font-size: 0.675rem;
    color: #878787;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .fiori-like-card .n-info .fiori-like-card-number{
-  font-size: 2rem;
+  font-size: 1rem; /*281217 2*/
   color:#838E92;
 }
 
