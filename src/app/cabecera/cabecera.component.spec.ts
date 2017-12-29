@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MangtInvoiceComponent } from './mangt-invoice.component';
+import { CabeceraComponent } from './cabecera.component';
 
-describe('MangtInvoiceComponent', () => {
-  let component: MangtInvoiceComponent;
-  let fixture: ComponentFixture<MangtInvoiceComponent>;
+describe('CabeceraComponent', () => {
+  let component: CabeceraComponent;
+  let fixture: ComponentFixture<CabeceraComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MangtInvoiceComponent ]
+      declarations: [ CabeceraComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MangtInvoiceComponent);
+    fixture = TestBed.createComponent(CabeceraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

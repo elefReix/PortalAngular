@@ -12,22 +12,21 @@ export class ProveedoresComponent implements OnInit {
   post:any;
   rfc:string = '';
   nombre:string = '';
-  noExterno:string = '';
-  noInterno:string = '';
+  noExterno:number ;
+  noInterno:number  ;
   colonia:string = '';
   estado:string = '';
-  cp:string = '';
+  cp:number  ;
   mail:string = '';
   banco:string = '';
-  ctaBanco:string = '';
-  telefono:string = '';
+  ctaBanco:number ;
+  telefono:number ;
 
   constructor(private fb: FormBuilder) {
     this.rForm = fb.group({
       'rfc':[null, Validators.required],
       'nombre':[null, Validators.required],
       'noExterno':[null, Validators.required],
-      'noInterno':[null, Validators.required],
       'colonia':[null, Validators.required],
       'estado':[null, Validators.required],
       'cp':[null, Validators.required],
@@ -51,5 +50,7 @@ export class ProveedoresComponent implements OnInit {
     this.mail = post.mail;
     this.telefono = post.telefono;
   }
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('Pantalla de Formulario de proveedores ');
+  }
 }

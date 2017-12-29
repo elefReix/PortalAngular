@@ -2,21 +2,30 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { UsuariosComponent } from './usuarios/usuarios.component';
-import { UploadInvoiceComponent } from './upload-invoice/upload-invoice.component';
-import { MangtInvoiceComponent } from './mangt-invoice/mangt-invoice.component';
-import { DetalleInvitacionComponent } from './usuarios/detalle-invitacion/detalle-invitacion.component';
-/*281217*/
-import { MainpageComponent } from './mainpage/mainpage.component';
-import { ProveedoresComponent } from './usuarios/proveedores/proveedores.component';
-/*281217*/
+
+import { MainpageComponent } from './mainpage/mainpage.component';  /*281217*/
+import { ProveedoresComponent } from './usuarios/proveedores/proveedores.component';  /*281217*/
+import { InvitacionesComponent } from './usuarios/invitaciones/invitaciones.component';   /*281217*/
+import { NuevosComponent } from './usuarios/nuevos/nuevos.component';  /*281217*/
+import { SConfirmarComponent } from './usuarios/s-confirmar/s-confirmar.component';  /*281217*/
+import { UtileriaComponent } from './utileria/utileria.component';  /*281217*/
+import { CabeceraComponent } from './cabecera/cabecera.component';   /*291217*/
+import { FooterComponent } from './footer/footer.component';   /*291217*/
+import { LoginComponent } from './login/login.component';   /*291217*/
+
+
 const mainRoutes : Routes = [
-    { path: '', redirectTo: '/Mainpage', pathMatch: 'full' },/*281217*/
-    {path: 'Usuarios', component : UsuariosComponent},
-    {path: 'Cargas', component : UploadInvoiceComponent},
-    {path: 'GestionCargas', component : MangtInvoiceComponent},
-    {path: 'DetalleInvitacion', component : DetalleInvitacionComponent},
-    {path: 'Proveedores', component : ProveedoresComponent},
-    {path: 'Mainpage', component : MainpageComponent}/*281217*/
+    { path: '', redirectTo: '/Login', pathMatch: 'full' },/*281217*/
+    { path: 'Usuarios', component : UsuariosComponent},
+    { path: 'Mainpage', component : MainpageComponent},   /*281217*/
+    { path: 'Proveedores', component : ProveedoresComponent},   /*281217*/
+    { path: 'Invitaciones', component : InvitacionesComponent},    /*281217*/
+    { path: 'Nuevos', component : NuevosComponent},   /*281217*/
+    { path: 'SConfirmar', component : SConfirmarComponent},   /*281217*/
+    { path: 'Utileria', component : UtileriaComponent},   /*281217*/
+    { path: 'Cabecera', component : CabeceraComponent },   /*291217*/
+    { path: 'Login', component : LoginComponent },   /*291217*/
+    { path: 'Footer', component : FooterComponent },   /*291217*/
 ];
 
 @NgModule({

@@ -19,6 +19,11 @@ font-size: 30px; /*281217*/
 font-family : 'Raleway', sans-serif;
 color : #fff;
 }
+h2{
+font-size: 20px; /*281217*/
+font-family : 'Raleway', sans-serif;
+color : #fff;
+}
 
 body{
 background-image : url("wp.jpg");

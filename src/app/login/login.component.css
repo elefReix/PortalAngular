@@ -1,0 +1,43 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:45%;
+	padding:2em;
+	margin: 2em auto;
+	background:#fff;
+	border-radius:4px;
+}
+
+div.input {
+	position: relative;
+	margin-top: 3rem;
+}
+
+div.input label { /*Estilo para las etiquetas*/
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 10px;
+	background: #fff;
+	padding: 0px 1.5px;
+	border-radius:2.5px;
+}
+
+div.input input { /*Estilo para campo de texto*/
+	padding: 0px 20px;
+	font-size: 20px;
+	outline: 0;
+	border-radius:4px;
+}
+
+div.input { /*Maerca la division que hay entre los elementos */
+	margin-top: 25px;
+}
+
+div.envio{ /*Maerca la division que hay entre los elementos */
+	font-size: 25px;
+	left: 50px;
+	background: #4fc3f7;
+}

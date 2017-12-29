@@ -4,8 +4,7 @@
     <div class="form-container">
       <div class="row columns">
 
-          <h1>Datos  del proveedor</h1>
-
+        <h1>Datos  del proveedor</h1>
 
         <label>RCF
           <input type="text" formControlName="rfc">
@@ -37,6 +36,16 @@
         </label>
         <div class="alert" *ngIf="!rForm.controls['colonia'].valid && rForm.controls['colonia'].touched">{{ titleAlert }}</div>
 
+        <label>Municipio
+          <input type="text" formControlName="municipio">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['municipio'].valid && rForm.controls['municipio'].touched">{{ titleAlert }}</div>
+
+        <label>País
+          <input type="text" formControlName="pais">
+        </label>
+        <div class="alert" *ngIf="!rForm.controls['pais'].valid && rForm.controls['pais'].touched">{{ titleAlert }}</div>
+
         <label>Estado
           <input type="text" formControlName="estado">
         </label>
@@ -47,7 +56,7 @@
         </label>
         <div class="alert" *ngIf="!rForm.controls['banco'].valid && rForm.controls['banco'].touched">{{ titleAlert }}</div>
 
-        <label>Numero de cuenta
+        <label>Número de cuenta o cuenta clabe
           <input type="text" formControlName="ctaBanco">
         </label>
         <div class="alert" *ngIf="!rForm.controls['ctaBanco'].valid && rForm.controls['ctaBanco'].touched">{{ titleAlert }}</div>
