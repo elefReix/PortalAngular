@@ -10,6 +10,18 @@ background:#fff;
 border-radius:4px;
 }
 
+.form-container1 {
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+width:70%;
+padding:2em;
+margin: 2em auto;
+background:#fff;
+border-radius:4px;
+}
+
 .alert {
     background: #f44336;
     padding: 5px;
