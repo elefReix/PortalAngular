@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Bienvenido";
+    //console.log('Variable usuario de sesion :  ' + title);
+
 }

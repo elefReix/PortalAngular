@@ -6,67 +6,91 @@
 
         <h1>Datos  del proveedor</h1>
 
-        <label>RCF
+        <div class="input">
+        <label>RCF </label>
           <input type="text" formControlName="rfc">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['rfc'].valid && rForm.controls['rfc'].touched">{{ titleAlert }}</div>
 
-        <label>Nombre / Razón social
+        <div class="input">
+        <label>Nombre / Razón social </label>
           <input type="text" formControlName="nombre">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['nombre'].valid && rForm.controls['nombre'].touched">{{ titleAlert }}</div>
 
-        <label>Calle
+        <div class="input">
+        <label>Calle</label>
           <input type="text" formControlName="calle">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['calle'].valid && rForm.controls['calle'].touched">{{ titleAlert }}</div>
 
-        <label># Exterior
+        <div class="input">
+        <label>Número Exterior</label>
           <input type="text" formControlName="noExterno">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['noExterno'].valid && rForm.controls['noExterno'].touched">{{ titleAlert }}</div>
 
-        <label># Interior
+        <div class="input">
+        <label>Número Interior </label>
           <input type="text" formControlName="noInterno">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['noInterno'].valid && rForm.controls['noInterno'].touched">{{ titleAlert }}</div>
 
-        <label>Colonia
+        <div class="input">
+        <label>Colonia </label>
           <input type="text" formControlName="colonia">
-        </label>
+        </div>
         <div class="alert" *ngIf="!rForm.controls['colonia'].valid && rForm.controls['colonia'].touched">{{ titleAlert }}</div>
 
-        <label>Municipio
+        <div class="input">
+        <label>Municipio </label>
           <input type="text" formControlName="municipio">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['municipio'].valid && rForm.controls['municipio'].touched">{{ titleAlert }}</div>
 
-        <label>País
+        <div class="input">
+        <label>País </label>
           <input type="text" formControlName="pais">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['pais'].valid && rForm.controls['pais'].touched">{{ titleAlert }}</div>
 
-        <label>Estado
+        <div class="input">
+        <label>Estado</label>
           <input type="text" formControlName="estado">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['estado'].valid && rForm.controls['estado'].touched">{{ titleAlert }}</div>
 
-        <label>Banco
+        <div class="input">
+        <label>Banco </label>
           <input type="text" formControlName="banco">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['banco'].valid && rForm.controls['banco'].touched">{{ titleAlert }}</div>
 
-        <label>Número de cuenta o cuenta clabe
+        <div class="input">
+        <label>Número de cuenta o cuenta clabe </label>
           <input type="text" formControlName="ctaBanco">
-        </label>
+        </div>
+
         <div class="alert" *ngIf="!rForm.controls['ctaBanco'].valid && rForm.controls['ctaBanco'].touched">{{ titleAlert }}</div>
 
-        <label>Telefono
+        <div class="input">
+        <label>Telefono </label>
           <input type="text" formControlName="telefono">
-        </label>
-        <div class="alert" *ngIf="!rForm.controls['telefono'].valid && rForm.controls['telefono'].touched">{{ titleAlert }}</div>
+        </div>
 
+          <div class="alert" *ngIf="!rForm.controls['telefono'].valid && rForm.controls['telefono'].touched">{{ titleAlert }}</div>
+        <div class="envio">
         <input type="submit" class="button expanded" value="Confirmar" [disabled]="!rForm.valid">
+        </div>
       </div>
     </div>
   </form>

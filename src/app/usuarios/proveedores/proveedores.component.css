@@ -1,18 +1,22 @@
 .form-container {
-    display:block;
-    width:90%;
-    padding:4em;
-    margin: 4em auto;
-    background:#fff;
+flex-grow: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+width:45%;
+padding:2em;
+margin: 2em auto;
+background:#fff;
+border-radius:4px;
 }
 
 .alert {
-    background: #f2edda;
-    padding: 7px;
-    font-size: .9em;
-    margin-bottom: 20px;
+    background: #f44336;
+    padding: 5px;
+    font-size: .3em;
+    margin-bottom: 10px;
     display: inline-block;
-    animation: 2s alertAnim forwards;
+    animation: 1s alertAnim forwards;
 }
 
 .button {
@@ -28,10 +32,43 @@ color : #263238;
 @keyframes alertAnim {
     from {
         opacity:0;
-        transform: translateY(-20px);
+        transform: translateX(-20px);
     }
     to {
-        opacity:1;
-        transform: translateY(0);
+        opacity:2;
+        transform: translateX(20);
     }
+}
+
+
+div.input {
+	position: relative;
+	margin-top: 3rem;
+}
+
+div.input label { /*Estilo para las etiquetas*/
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 10px;
+	background: #fff;
+	padding: 0px 1.5px;
+	border-radius:2.5px;
+}
+
+div.input input { /*Estilo para campo de texto*/
+	padding: 0px 20px;
+	font-size: 20px;
+	outline: 0;
+	border-radius:4px;
+}
+
+div.input { /*Maerca la division que hay entre los elementos */
+	margin-top: 25px;
+}
+
+div.envio{ /*Maerca la division que hay entre los elementos */
+	font-size: 25px;
+	left: 50px;
+	background: #4fc3f7;
 }

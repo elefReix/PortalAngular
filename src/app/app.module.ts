@@ -7,7 +7,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';/*281217*/
 import { InvitacionesComponent } from './usuarios/invitaciones/invitaciones.component'; /*281217*/
 import { ProveedoresComponent } from './usuarios/proveedores/proveedores.component'; /*281217*/
 
-import { AppRouting } from './app-routing.module';
+import { AppRouting } from './app-routing.module';    /*271217*/
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; /*281217*/
 import { HttpModule } from '@angular/http'; /*281217*/
