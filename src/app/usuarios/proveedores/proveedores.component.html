@@ -13,7 +13,7 @@
         <div class="alert" *ngIf="!rForm.controls['rfc'].valid && rForm.controls['rfc'].touched">{{ titleAlert }}</div>
 
         <div class="input">
-        <label>Nombre / Razón social </label>
+        <label>Razón social </label>
           <input type="text" formControlName="nombre">
         </div>
         <div class="alert" *ngIf="!rForm.controls['nombre'].valid && rForm.controls['nombre'].touched">{{ titleAlert }}</div>
@@ -62,13 +62,14 @@
 
         <div class="input">
         <label>Banco </label>
-          <input type="text" formControlName="banco">
+          <input type="text" formControlName="banco" placeholder="En caso de que el dato sea incorrecto ir a la sección de tickets">
         </div>
         <div class="alert" *ngIf="!rForm.controls['banco'].valid && rForm.controls['banco'].touched">{{ titleAlert }}</div>
+        
 
         <div class="input">
         <label>Número de cuenta o cuenta clabe </label>
-          <input type="text" formControlName="ctaBanco">
+          <input type="text" formControlName="ctaBanco" placeholder="En caso de que el dato sea incorrecto ir a la sección de tickets">
         </div>
         <div class="alert" *ngIf="!rForm.controls['ctaBanco'].valid && rForm.controls['ctaBanco'].touched">{{ titleAlert }}</div>
 
@@ -78,6 +79,9 @@
         </div>
           <div class="alert" *ngIf="!rForm.controls['telefono'].valid && rForm.controls['telefono'].touched">{{ titleAlert }}</div>
 
+        
+          <hr>
+          <a href="/Usuarios"><p>Volver</p></a>
         <div class="envio">
         <input type="submit" class="button expanded" value="Confirmar" [disabled]="!rForm.valid">
         </div>

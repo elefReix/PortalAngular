@@ -18,6 +18,9 @@ display: inline-block;
 animation: 2s alertAnim forwards;
 }
 
+a{
+    color : #040d11;
+}
 .button {
 margin-top: 3rem;
 }

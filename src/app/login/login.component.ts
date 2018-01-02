@@ -20,7 +20,9 @@ export class LoginComponent implements OnInit {
     console.log("Usuario : "+username + " | ","Password : "+password);
     	if(username == 'admin' && password == 'admin') {
     		this.router.navigate(['Mainpage']);
-    	}
+    	}else if(username == 'user' && password == 'user'){
+        this.router.navigate(['Usuarios']);
+      }
     }
 
 }
