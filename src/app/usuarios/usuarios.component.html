@@ -1,6 +1,6 @@
 <!-- Titulo del componente -->
-<div><h2>Inicio</h2></div>
 <!-- usuarios pendientes de confirmar datos -->
+
       <a routerLink="/Utileria">
         <div class="fiori-like-card-inicio">
           <div class="fiori-like-card-content" >
@@ -11,95 +11,151 @@
           </div>
         </div>
       </a>
-<div><h1>{{title}}</h1></div>
-
+      <div><br/></div>
+<h1>Aclaraciones</h1>
 <!-- usuarios pendientes de confirmar datos -->
 <a routerLink="/Cargas">
   <div class="fiori-like-card">
     <div class="fiori-like-card-content" >
       <div>
-        <p class="title">Cargar factura</p>
-        <p class="sub-title">Cargas  </p>
+        <p class="title">Mis solicitudes</p>
+        <p class="sub-title">Pendientes </p>
       </div>
       <div class="fiori-like-card-footer">
-        <i class="fa fa-upload fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-upload fa-lg" aria-hidden="true"></i>
         <span class="n-info">
           <p class="fiori-like-card-number"> 3 </p>
-           <span class="meta">
-             Exitosas
-           </span>
+          <span class="meta"> `   </span>
         </span>
       </div>
     </div>
   </div>
 </a>
-
+<div><br/></div>
+<h1>Pedidos de venta</h1>
+<a routerLink="/Ordenes">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Mis pedidos </p>
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-file fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+            <p class="fiori-like-card-number"> 10 </p>
+             <span class="meta">
+               Disponibles
+             </span>
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+<a routerLink="/Ordenes">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Devoluciones</p>
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-file-o fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+            <p class="fiori-like-card-number"> 4 </p>
+            <span class="meta"> `   </span>
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+<div><br/></div>
+<!-- -->
+<h1>Emisión de facturas</h1>
 <a routerLink="/Ordenes">
   <div class="fiori-like-card">
     <div class="fiori-like-card-content">
       <div>
         <p class="title">Enviar factura </p>
-        <p class="sub-title">Envios</p>
       </div>
       <div class="fiori-like-card-footer">
-          <i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i>
-          
-        </div>
-    </div>
-  </div>
-</a>
-
-<!-- usuarios pendientes de confirmar datos -->
-<a routerLink="/Facturas">
-  <div class="fiori-like-card">
-    <div class="fiori-like-card-content">
-      <div>
-        <p class="title">Facturas </p>
-        <p class="sub-title">Estados</p>
-      </div>
-      <div class="fiori-like-card-footer">
-          <i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-paper-plane fa-lg" aria-hidden="false"></i>
           <span class="n-info">
-            <p class="fiori-like-card-number"> 3 </p>
+            <p class="fiori-like-card-number"> 5 </p>
              <span class="meta">
-               Disponibles
+               Factura tus órdenes
              </span>
           </span>
         </div>
     </div>
   </div>
 </a>
-
-<!-- Lista de proveedores -->
 <a routerLink="/Ordenes">
   <div class="fiori-like-card">
     <div class="fiori-like-card-content">
       <div>
-        <p class="title">Ord. Compras </p>
-        <p class="sub-title">Estados</p>
+        <p class="title">Rechazos</p>
       </div>
       <div class="fiori-like-card-footer">
-          <i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-ban fa-lg" aria-hidden="false"></i>
           <span class="n-info">
-            <p class="fiori-like-card-number"> 3 </p>
-             <span class="meta">
-               Disponibles
-             </span>
+            <p class="fiori-like-card-number"> 4 </p>
+            <span class="meta">
+                <span class="meta"> `   </span>
+              </span>
           </span>
         </div>
     </div>
   </div>
 </a>
-<!-- Lista de proveedores -->
-<a routerLink="/Tickets">
+<a routerLink="/Ordenes">
   <div class="fiori-like-card">
     <div class="fiori-like-card-content">
       <div>
-        <p class="title">Tickets </p>
-        <p class="sub-title">Levantar ticket</p>
+        <p class="title">Notas de crédito</p>
       </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-ban fa-lg" aria-hidden="false"></i>
+          <span class="n-info">
+            <p class="fiori-like-card-number"> 4 </p>
+            <span class="meta"> `   </span>
+          </span>
+        </div>
     </div>
   </div>
 </a>
+<div><br/></div>
+<h1>Pagos</h1>
+<a routerLink="/Ordenes">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Enviar </p>
+        <p class="sub-title">Comprobante </p>
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+            <p class="fiori-like-card-number"> 10 </p>
+            <span class="meta"> `   </span>
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+<a routerLink="/Ordenes">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Mi estado Cta.</p>
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-balance-scale fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+              <span class="meta"> `   </span>
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+
 
 

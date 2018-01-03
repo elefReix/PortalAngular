@@ -1,15 +1,16 @@
 <!-- Titulo del componente -->
-<div><h2>Usuarios</h2></div>
+
+<div><h2>Gestión de usuarios</h2></div>
 <!-- usuarios pendientes de confirmar datos -->
 <a routerLink="/Invitaciones">
   <div class="fiori-like-card">
     <div class="fiori-like-card-content" >
       <div>
-        <p class="title">Invitaciones </p>
+        <p class="title">Enviar invitación </p>
         <p class="sub-title">Envio de invitaciones  </p>
       </div>
       <div class="fiori-like-card-footer">
-        <i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-paper-plane fa-lg" aria-hidden="false"></i>
         <span class="n-info">
           <p class="fiori-like-card-number"> 30 </p>
            <span class="meta">
@@ -25,14 +26,13 @@
   <div class="fiori-like-card">
     <div class="fiori-like-card-content">
       <div>
-        <p class="title">Nuevos </p>
-        <p class="sub-title">Confirmados</p>
+        <p class="title">Nuevos usuarios </p>
       </div>
       <div class="fiori-like-card-footer">
-          <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-user fa-lg" aria-hidden="true"></i>
           <span class="n-info">
             <p class="fiori-like-card-number"> 3 </p>
-             
+            <span class="meta"> `   </span>
           </span>
       </div>
     </div>
@@ -43,20 +43,87 @@
   <div class="fiori-like-card">
     <div class="fiori-like-card-content">
       <div>
-        <p class="title">Nuevos </p>
-        <p class="sub-title">Sin confirmar</p>
+        <p class="title">Invitaciones pendientes </p>
+        <!--<p class="sub-title"></p>-->
       </div>
       <div class="fiori-like-card-footer">
-          <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+          <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
           <span class="n-info">
             <p class="fiori-like-card-number"> 15 </p>
-             <span class="meta">
-               Pendientes
-             </span>
+            <span class="meta">Usuarios</span>
           </span>
       </div>
     </div>
   </div>
 </a>
 
+<!-- Restablecer contraseña -->
+<a routerLink="/SConfirmar">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Reestablecer contraseña </p>
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+            <p class="fiori-like-card-number"> 15 </p>
+            <span class="meta"> `   </span>
+          </span>
+      </div>
+    </div>
+  </div>
+</a>
 
+<!-- Eliminar Usuario -->
+<a routerLink="/SConfirmar">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content">
+      <div>
+        <p class="title">Actualizar </p>   
+      </div>
+      <div class="fiori-like-card-footer">
+          <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+          <span class="n-info">
+              <p class="fiori-like-card-number"> 15 </p>
+              <span class="meta">Socios</span>
+            </span>
+      </div>
+    </div>
+  </div>
+</a>
+<div><br/></div>
+<div><h2>Socios de negocio</h2></div>
+<!-- usuarios pendientes de confirmar datos -->
+<a routerLink="/Invitaciones">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content" >
+      <div>
+        <p class="title">Registrados </p>
+      </div>
+      <div class="fiori-like-card-footer">
+        <i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>
+        <span class="n-info">
+            <p class="fiori-like-card-number"> 15 </p>
+            <span class="meta">Socios</span>
+          </span>
+      </div>
+    </div>
+  </div>
+</a>
+<a routerLink="/Invitaciones">
+  <div class="fiori-like-card">
+    <div class="fiori-like-card-content" >
+      <div>
+        <p class="title">Bloqueados </p>
+      </div>
+      <div class="fiori-like-card-footer">
+        <i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>
+        <span class="n-info">
+            <p class="fiori-like-card-number"> 15 </p>
+            <span class="meta">Socios</span>
+          </span>
+      </div>
+    </div>
+  </div>
+</a>
