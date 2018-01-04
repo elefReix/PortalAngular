@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginserviceService} from '../loginservice.service';
 
 @Component({
   selector: 'app-mainpage',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mainpage.component.css']
 })
 export class MainpageComponent implements OnInit {
-  title = 'Hola _nombre';
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  constructor(private loginservice: LoginserviceService) { }
+  title = "Hola "+ this.loginservice.username ;
+  ngOnInit() { }
 }

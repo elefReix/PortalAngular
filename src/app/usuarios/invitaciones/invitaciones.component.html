@@ -1,19 +1,21 @@
-
-            <div class="col-md-4">
-                <h2>Proveedores disponibles</h2>
-                <ul class="list-group">
-                    <li class="list-group-item" *ngFor="let proveedor of proveedores"> {{proveedor.rfc}}   {{proveedor.nombre}} <a class="btn btn-primary" (click)="select()">Detalle</a> </li> 
-                </ul>
-                
-            </div>  
+<div>
+        <a href="/Usuarios"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    </div>
+<div class="col-md-4">
+    <h2>Proveedores disponibles</h2>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let proveedor of proveedores"> {{proveedor.rfc}}   {{proveedor.nombre}} <a class="btn btn-primary" (click)="select()">Detalle</a> </li> 
+    </ul>        
+</div>  
             
-            <div class="col-md-6" *ngIf="show">
-                    <h2>Detalle de proveedor</h2>
-                    <ul class="list-group">
-                            <li class="list-group-item" *ngFor="let proveedor of proveedores">{{proveedor.rfc}} . {{proveedor.nombre}} . {{proveedor.banco}} . {{proveedor.estado}} . {{proveedor.calle}} . {{proveedor.noExterno}} . {{proveedor.colonia}} </li> 
-                    </ul>
-                    <a class="btn btn-primary btn-block" (click)="cancelar()">Cancelar</a>
-                    <a class="btn btn-primary btn-block" (click)="enviar()">Enviar</a>
-            </div>
+<div class="col-md-6" *ngIf="show">
+    <h2>Detalle de proveedor</h2>
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let proveedor of proveedores">{{proveedor.rfc}} . {{proveedor.nombre}} . {{proveedor.banco}} . {{proveedor.estado}} . {{proveedor.calle}} . {{proveedor.noExterno}} . {{proveedor.colonia}} </li> 
+    </ul>
+    <a class="btn btn-primary btn-block" (click)="cancelar()">Cancelar</a>
+    <a class="btn btn-primary btn-block" (click)="enviar()">Enviar</a>
+</div>
+
           
   

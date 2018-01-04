@@ -26,7 +26,9 @@ import { CargaFacturaComponent } from './usuarios/carga-factura/carga-factura.co
 import { GestionComponent } from './gestion/gestion.component';
 import { FacturaComponent } from './gestion/factura/factura.component';
 import { OrdenCompraComponent } from './gestion/orden-compra/orden-compra.component';
-import { TickesComponent } from './usuarios/tickes/tickes.component'; /*020118*/
+import { TickesComponent } from './usuarios/tickes/tickes.component';
+import { ListasComponent } from './listas/listas.component';
+import { PedidosComponent } from './gestion/pedidos/pedidos.component'; /*020118*/
 
 
 @NgModule({
@@ -43,7 +45,7 @@ import { TickesComponent } from './usuarios/tickes/tickes.component'; /*020118*/
     LoginComponent, /*291217*/
     FooterComponent, /*291217*/
     InicioComponent, /*020118*/
-    WelcomeComponent, CargaFacturaComponent, GestionComponent, FacturaComponent, OrdenCompraComponent, TickesComponent /*020118*/
+    WelcomeComponent, CargaFacturaComponent, GestionComponent, FacturaComponent, OrdenCompraComponent, TickesComponent, ListasComponent, PedidosComponent /*020118*/
 
   ],
   imports: [
@@ -54,7 +56,7 @@ import { TickesComponent } from './usuarios/tickes/tickes.component'; /*020118*/
     ReactiveFormsModule,  /*281217*/
     NgbModule /*020118*/
   ],
-  providers: [],
+  providers: [LoginserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

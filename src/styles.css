@@ -22,7 +22,11 @@ font-size: 20px; /*281217*/
 font-family : 'Raleway', sans-serif;
 color : #fff;
 }
-
+h3{
+  font-size: 18px; /*281217*/
+  font-family : 'Raleway', sans-serif;
+  color : #fff;
+  }
 body{
 background-image : url("wp.jpg");
 line-height : 18px;

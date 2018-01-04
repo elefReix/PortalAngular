@@ -19,6 +19,8 @@ import { GestionComponent } from './gestion/gestion.component';
 import { FacturaComponent } from './gestion/factura/factura.component';
 import { OrdenCompraComponent } from './gestion/orden-compra/orden-compra.component';
 import { TickesComponent } from './usuarios/tickes/tickes.component';
+import { LoginserviceService } from './loginservice.service';
+import { ListasComponent } from './listas/listas.component';
 
 
 const mainRoutes : Routes = [
@@ -35,10 +37,11 @@ const mainRoutes : Routes = [
     { path: 'Footer', component : FooterComponent },   /*291217*/
     { path: 'Inicio', component : InicioComponent}, /*020118*/
     { path: 'Cargas', component : CargaFacturaComponent},/*020118*/
-    { path : 'Gestion', component : GestionComponent},
-    { path : 'Facturas', component : FacturaComponent},
+    { path: 'Gestion', component : GestionComponent},
+    { path: 'Facturas', component : FacturaComponent},
     { path: 'Ordenes', component : OrdenCompraComponent},
-    { path: 'Tickets', component : TickesComponent}
+    { path: 'Tickets', component : TickesComponent},
+    { path: 'Listas', component : ListasComponent}
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginserviceService} from './loginservice.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = "Hola _nombre";
-    //console.log('Variable usuario de sesion :  ' + title);
-
+  
+  constructor(private loginservice: LoginserviceService){
+    console.log('Arranca la aplicación  '+this.loginservice.username);
+  }
+  title = this.loginservice.username;
 }

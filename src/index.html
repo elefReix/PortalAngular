@@ -8,14 +8,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+
 </head>
 <style>
 .percent-count {
@@ -26,7 +27,6 @@
   text-align:center;
   color :black;
 }
-
 .progress-bar {
   width: 506px;
   height: 2px;
@@ -42,116 +42,35 @@
   border-radius:10px;
 }
 </style>
-<header>
-        <div class="col-md-12">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <!-- Brand and toggle get grouped for better mobile display -->
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Portal de proveedores</a>
-                  </div>
-              
-                  <!-- Collect the nav links, forms, and other content for toggling -->
-                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="http://www.sineti.com"><span class="fa fa-skyatlas" aria-hidden="true"></span></a></li>
-                      <li><a href="/Utileria"><span class="fa fa-question-circle-o fa-lg" aria-hidden="true"></span></a></li>
-                      <li><a href="/Login"><span class="fa fa-user-o" aria-hidden="true"></span> Entrar <span class="fa fa-chevron-down fa-lg"></a></li>
-                      
-                    </ul>
-                  </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-              </nav>
-        </div>
-</header>
 <body>
-
-       <!-- Tails -->
-    <div class="row">
-         <div class="col-md-1"></div>
-         <div class="col-md-11">
-           <app-root>
-             <!-- Loading -->
-               <div id="percentCount" class="percent-count">100%</div>
-                  <div class="progress-bar">
-                    <div class="progress" id="progress"></div>
-                </div>
-           </app-root>
-           <app-footer></app-footer>
-         </div>
-
-         <script type="text/javascript" >
-               function progress() {
-                 var prg = document.getElementById('progress');
-                 var percent = document.getElementById('percentCount');
-                 var counter = 5;
-                 var progress = 25;
-                 var id = setInterval(frame,5);
-                 function frame() {
-                   if (progress == 500 && counter == 100 ) {
-                     clearInterval(id);
-                   } else {
-                     counter+=1;
-                     progress+=5;
-                     prg.style.width = progress + 'px';
-                     percent.innerHTML = counter + '%';
-                   }
-                 }
-               }
-               progress();
-         </script>
-   </div>
+  <!-- Principal -->
+  <app-root>
+    <!-- Loading -->
+    <div id="percentCount" class="percent-count">100%</div>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+          </div>
+  </app-root>
+  <script type="text/javascript" >
+    function progress() {
+      var prg = document.getElementById('progress');
+      var percent = document.getElementById('percentCount');
+      var counter = 5;
+      var progress = 25;
+      var id = setInterval(frame,5);
+      function frame() {
+        if (progress == 500 && counter == 100 ) {
+          clearInterval(id);
+        } else {
+          counter+=1;
+          progress+=5;
+          prg.style.width = progress + 'px';
+          percent.innerHTML = counter + '%';
+        }
+      }
+    }progress();
+  </script>
+ 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 </body>
 </html>
-<!--
-  *ngFor
-  ng generate component posts
--->
-<!-- Menu
-<div class="contenedor-menu">
-  <a href="#" class="btn-menu" ><i icono class="fa fa-bars"></i> Menu </a>
-  <ul class="menu">
-    <li><a href="#">Home</a></li>
-
-    <li><a href="#"><i class="icono izquierda fa fa-rocket" aria-hidden="true"></i>Purch orders</a><i class="icono derecha fa fa-chevron-down"></i>
-      <ul>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#"><i class="icono izquierda fa fa-terminal" aria-hidden="true"></i>Registros</a><i class="icono derecha fa fa-chevron-down"></i>
-      <ul>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#"><i class="icono izquierda fa fa-users" aria-hidden="true"></i>Usuarios</a><i class="icono derecha fa fa-chevron-down"></i>
-      <ul>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#"><i class="icono izquierda fa fa-twitch" aria-hidden="true"></i>Notificaciones</a><i class="icono derecha fa fa-chevron-down"></i>
-      <ul>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-        <li><a>Submenu</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>-->
