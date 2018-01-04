@@ -21,6 +21,7 @@ import { OrdenCompraComponent } from './gestion/orden-compra/orden-compra.compon
 import { TickesComponent } from './usuarios/tickes/tickes.component';
 import { LoginserviceService } from './loginservice.service';
 import { ListasComponent } from './listas/listas.component';
+import { PedidosComponent } from './gestion/pedidos/pedidos.component';
 
 
 const mainRoutes : Routes = [
@@ -41,7 +42,8 @@ const mainRoutes : Routes = [
     { path: 'Facturas', component : FacturaComponent},
     { path: 'Ordenes', component : OrdenCompraComponent},
     { path: 'Tickets', component : TickesComponent},
-    { path: 'Listas', component : ListasComponent}
+    { path: 'Listas', component : ListasComponent},
+    { path: 'Pedidos', component : PedidosComponent}
 ];
 
 @NgModule({
