@@ -29,7 +29,9 @@ import { OrdenCompraComponent } from './gestion/orden-compra/orden-compra.compon
 import { TickesComponent } from './usuarios/tickes/tickes.component';
 import { ListasComponent } from './listas/listas.component';
 import { PedidosComponent } from './gestion/pedidos/pedidos.component'; /*020118*/
+import { UtileriaService } from './utileria.service';
 
+import { VirtualScrollModule } from 'angular2-virtual-scroll';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,15 @@ import { PedidosComponent } from './gestion/pedidos/pedidos.component'; /*020118
     LoginComponent, /*291217*/
     FooterComponent, /*291217*/
     InicioComponent, /*020118*/
-    WelcomeComponent, CargaFacturaComponent, GestionComponent, FacturaComponent, OrdenCompraComponent, TickesComponent, ListasComponent, PedidosComponent /*020118*/
+    WelcomeComponent, 
+    CargaFacturaComponent, 
+    GestionComponent, 
+    FacturaComponent, 
+    OrdenCompraComponent, 
+    TickesComponent, 
+    ListasComponent, 
+    PedidosComponent /*020118*/
+    
 
   ],
   imports: [
@@ -54,9 +64,10 @@ import { PedidosComponent } from './gestion/pedidos/pedidos.component'; /*020118
     FormsModule, /*281217*/
     HttpModule, /*281217*/
     ReactiveFormsModule,  /*281217*/
-    NgbModule /*020118*/
+    NgbModule, /*020118*/
+    VirtualScrollModule
   ],
-  providers: [LoginserviceService],
+  providers: [LoginserviceService,UtileriaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

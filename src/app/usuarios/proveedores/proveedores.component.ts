@@ -47,14 +47,16 @@ export class ProveedoresComponent implements OnInit {
   addPost(post){
     this.rfc = post.rfc;
     this.nombre = post.nombre;
+    this.calle = post.calle;
     this.noExterno = post.noExterno;
     this.noInterno = post.noInterno;
     this.colonia = post.colonia;
+    this.municipio = post.municipio;
     this.estado = post.estado;
     this.cp = post.cp;
+    this.mail = post.mail;
     this.banco = post.banco;
     this.ctaBanco = post.ctaBanco;
-    this.mail = post.mail;
     this.telefono = post.telefono;
   }
   ngOnInit() {
