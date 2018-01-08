@@ -10,50 +10,68 @@
             </div>
         </div>
     </div>
+
+<div class="scrollbar" id="style-16">
+    <div class="force-overflow">
     <ul class="list-group">
-        <a>
-        <li class="list-group-item" *ngFor="let pedido of pedidos">    
+        <a><li class="list-group-item" *ngFor="let pedido of pedidos">    
             <div class="fiori-like-card">
                 <div class="fiori-like-card-content">
-                    <div class="fiori-like-card-footer">
-                        {{pedido.pedido}}
-                        <span class="n-info">
-                            <p class="fiori-like-card-number">  {{pedido.estado}} </p>       
-                        </span>
-                    </div>
                     <div class="fiori-like-card-footer">
                         {{pedido.fechaPedido}}
                         <span class="n-info">
                             <p class="fiori-like-card-number">  {{pedido.monto}} </p>  
                         </span>
                     </div>
+                    <div class="fiori-like-card-footer">
+                        {{pedido.pedido}}
+                        <span class="n-info">
+                            <p class="fiori-like-card-number">  {{pedido.estado}} </p>       
+                        </span>
+                    </div>
                 </div>
             </div> 
-        </li>
-        </a> 
-    </ul>  
-</div>
+        </li></a> 
+    </ul> 
+    </div>
+</div> 
+    </div>
+
 <div class="col-md-9">
     <h2>Descripción</h2>
-    Pedido
-    <div class="fiori-like-card">
-            <div class="fiori-like-card-content">
-                <div class="fiori-like-card-footer" *ngIf="mostrar">
-                    {{pedido.pedido}}
-                    <span class="n-info">
-                        <p class="fiori-like-card-number"> {{pedido.estado}} </p>       
-                    </span>
-                </div>
-                <div class="fiori-like-card-footer">
-                    {{pedido.fechaPedido}}
-                    <span class="n-info">
-                        <p class="fiori-like-card-number"> {{pedido.monto}} </p>  
-                    </span>
-                </div>
-            </div>
-        </div> 
-          <hr>
-          <h2>Unidades</h2>
+    <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th>Sales Order </th>
+            <th>0.00</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr >   <td>PO        </td> <td>Order total     </td> </tr>
+            <tr >   <td>Ordered   </td> <td>Overall status  </td> </tr>
+            <tr >   <td>Requested </td> <td>Delivery Status </td> </tr>
+            <tr >   <td>Ship to   </td> <td>                </td> </tr>            
+        </tbody>
+      </table>
+    <hr>
+    <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Ordered</th>
+            <th>Price</th>
+            <th>Net Amount </th>
+            <th>Status Summary </th>
+            <th>Shipped</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+           <!-- Valores para unidades -->
+          </tr>
+          
+        </tbody>
+      </table>
 </div>
         
 

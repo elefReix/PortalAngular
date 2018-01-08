@@ -35,7 +35,7 @@ export class PedidosComponent implements OnInit {
   ngOnInit() { 
     //this.pedidos = this.router.snapshot.params['id']
   }
-
+  muestra=true;
   select(e){
     var numeroPedido = e.target.elements[0].value;
     console.log();
