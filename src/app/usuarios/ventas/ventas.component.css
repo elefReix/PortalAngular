@@ -1,0 +1,43 @@
+.bs-example{
+    margin: 35px;
+}
+.form-container {
+display:block;
+width:90%;
+padding:4em;
+margin: 4em auto;
+background:#fff;
+}
+
+.alert {
+background: #f2edda;
+padding: 7px;
+font-size: .9em;
+margin-bottom: 20px;
+display: inline-block;
+animation: 2s alertAnim forwards;
+}
+
+a{
+    color : #040d11;
+}
+.button {
+margin-top: 3rem;
+}
+h1{
+font-size: 30px; /*281217*/
+font-family : 'Raleway', sans-serif;
+color : #263238;
+}
+
+
+@keyframes alertAnim {
+from {
+    opacity:0;
+    transform: translateY(-20px);
+}
+to {
+    opacity:1;
+    transform: translateY(0);
+}
+}
