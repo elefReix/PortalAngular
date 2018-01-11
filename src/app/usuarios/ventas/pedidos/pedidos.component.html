@@ -13,56 +13,69 @@
 
 <div class="scrollbar" id="style-16">
     <div class="force-overflow">
-    <ul class="list-group">
-        <a><li class="list-group-item" *ngFor="let pedido of pedidos">    
+    <ul class="list-group" >
+        <option *ngFor="let pedido of pedidos">    
             <div class="fiori-like-card">
                 <div class="fiori-like-card-content">
-                    <div class="fiori-like-card-footer">
-                        {{pedido.fechaPedido}}
+                    <div class="fiori-like-card-footer ">
+                        {{pedido.pedido}}
                         <span class="n-info">
                             <p class="fiori-like-card-number">  {{pedido.monto}} </p>  
                         </span>
                     </div>
                     <div class="fiori-like-card-footer">
-                        {{pedido.pedido}}
+                        {{pedido.fechaPedido}}
                         <span class="n-info">
-                            <p class="fiori-like-card-number">  {{pedido.estado}} </p>       
+                            <p class="fiori-like-card-number danger">  {{pedido.estado}} </p>       
                         </span>
                     </div>
                 </div>
             </div> 
-        </li></a> 
+        </option>
     </ul> 
     </div>
 </div> 
     </div>
 
 <div class="col-md-9">
-    <h2>Descripción</h2>
     <table class="table table-responsive">
         <thead>
           <tr>
-            <th>Sales Order </th>
-            <th>0.00</th>
+            <th colspan="2">Órdenes de venta </th>
+            <th colspan="2">0.00        </th>
           </tr>
         </thead>
         <tbody>
-            <tr >   <td>PO        </td> <td>Order total     </td> </tr>
-            <tr >   <td>Ordered   </td> <td>Overall status  </td> </tr>
-            <tr >   <td>Requested </td> <td>Delivery Status </td> </tr>
-            <tr >   <td>Ship to   </td> <td>                </td> </tr>            
+            <tr >   
+                <td>Orden de compra     </td> 
+                <td *ngIf="muestra">VALOR PO            </td> 
+                <td>Total del pedido    </td> 
+                <td *ngIf="muestra">VALOR Order total   </td>     
+            </tr> 
+            <tr >   
+                <td>Pedido              </td> 
+                <td *ngIf="muestra">VALOR requested     </td> 
+                <td>Estado general      </td> 
+                <td *ngIf="muestra">VALOR Overall Status</td>       
+            </tr>
+            <tr>
+                <td>Enviar a             </td> 
+                <td *ngIf="muestra">VALOR Ship to        </td>
+                <td>                     </td>
+                <td>                     </td>
+            </tr>         
         </tbody>
       </table>
     <hr>
     <table class="table table-responsive">
         <thead>
           <tr>
-            <th>Description</th>
-            <th>Ordered</th>
-            <th>Price</th>
-            <th>Net Amount </th>
-            <th>Status Summary </th>
-            <th>Shipped</th>
+            <th>Descripción</th>
+            <th>Ordenado</th>
+            <th>Precio</th>
+            <th>Importe neto </th>
+            <th>Resumen de estado </th>
+            <th>Enviado</th>
           </tr>
         </thead>
         <tbody>

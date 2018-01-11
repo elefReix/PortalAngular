@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit {
     console.log("Usuario : "+username + " | ","Password : "+password);
     	if(username == 'admin' && password == 'admin') {
         this.loginservice.setUserLoggedIn();
-        this.router.navigate(['Mainpage']);
+        this.router.navigate(['admin']);
         this.loginservice.username = this.nombreUsuario;
         console.log("Usuario '" + this.loginservice.username + "' | autenticado '" +this.loginservice.getUserLoggedIn()+"'");
     	}else if(username == 'user' && password == 'user'){
-        this.router.navigate(['Usuarios']);
+        this.router.navigate(['usuario']);
       }
     }
 

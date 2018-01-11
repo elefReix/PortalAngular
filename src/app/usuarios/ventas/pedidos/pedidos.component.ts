@@ -28,6 +28,7 @@ const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'C
   styleUrls: ['./pedidos.component.css']
 })
 export class PedidosComponent implements OnInit {
+  muestra = true;
   pedidos =[];
   constructor(private utileriaPedidos : UtileriaService) {
     this.pedidos = utileriaPedidos.getPedidos();
